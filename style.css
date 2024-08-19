@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container {
+  width: 100%;
+  height: 150vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(women.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#logo {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 40px;
+  margin: 10px 0 0 40px;
+  font-style: oblique;
+  letter-spacing: 3px;
+  color: orangered;
+  cursor: pointer;
+}
+nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+}
+/* nav ul li {
+  position: relative;
+} */
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 25px;
+  position: relative;
+  text-transform: uppercase;
+}
+nav ul li a::after {
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -10px;
+  position: absolute;
+  background-color: orangered;
+  transition: 0.5s;
+  content: "";
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.login-btn {
+  font-size: 25px;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 600;
+  color: orangered;
+}
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  background-color: orangered;
+  color: white;
+  padding: 20px;
+  border-radius: 30px;
+  margin-top: 14px;
+  border-top-right-radius: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: 0.5s;
+  font-size: 20px;
+}
+.btn:hover {
+  border-top-right-radius: 30px;
+}
+.content {
+  /* align-items: center; */
+  margin-top: 10%;
+  max-width: 600px;
+  margin-left: 7%;
+  /* background-color: white; */
+}
+.content h2 {
+  font-weight: 300;
+  font-size: 40px;
+  color: whitesmoke;
+  animation-delay: 0.5s;
+}
+.content h1 {
+  /* display: inline; */
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+  animation-delay: 1s;
+}
+.content h1 span {
+  color: orangered;
+}
+.content p {
+  margin-top: 20px;
+  color: white;
+  font-size: 18px;
+  animation-delay: 1.5s;
+}
+.feature-img.anim {
+  width: 530px;
+  float: left;
+  animation-delay: 2.5s;
+}
+.anim {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: vijay 0.5s linear forwards;
+}
+.content .btn {
+  animation-delay: 2s;
+}
+@keyframes vijay {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
